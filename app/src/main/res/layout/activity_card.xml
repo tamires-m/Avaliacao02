@@ -7,27 +7,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".CardActivity">
 
     <Button
-        android:id="@+id/player1Button"
+        android:id="@+id/drawButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jogador 1"
-        android:onClick="onPlayer1Click" />
+        android:text="Tirar Carta"
+        android:onClick="drawCard" />
 
-    <Button
-        android:id="@+id/player2Button"
+    <TextView
+        android:id="@+id/cartaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jogador 2"
-        android:onClick="onPlayer2Click" />
+        android:text=""
+        android:textSize="24sp" />
 
+    <!-- Botão para voltar à MainActivity -->
     <Button
-        android:id="@+id/finishButton"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finalizar Jogo"
-        android:onClick="onFinishClick" />
+        android:text="Voltar"
+        android:onClick="backToMain" />
 
 </LinearLayout>
